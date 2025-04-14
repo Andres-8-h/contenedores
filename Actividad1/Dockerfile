@@ -1,2 +1,3 @@
 FROM nginx:alpine
-COPY . /usr/share/nginx/html
+
+CMD ["bash", "-c", "echo 'Hola Mundo' > /usr/share/nginx/html/index.html && nginx -g 'daemon off;'"]
