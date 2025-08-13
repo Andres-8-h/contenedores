@@ -1,5 +1,5 @@
  
-# Crear nedes  para contenedores de PostgreSQL y Grafana
+# Crear redes  para contenedores de PostgreSQL y Grafana
 docker network create res_monitoreo
 # Crear volumenes para contenedores de PostgreSQL y Grafana
 docker volume create grafana-storage 
@@ -103,4 +103,5 @@ docker run -d \
 docker cp grafana:/var/lib/grafana/. lib
 docker cp grafana:/etc/grafana/. etc
 docker cp prometheus:/etc/prometheus/prometheus.yml prometheus.yml
+
 docker cp prometheus:/etc/prometheus/alerts.yml alerts.yml
